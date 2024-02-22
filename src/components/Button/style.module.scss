@@ -1,0 +1,21 @@
+@import "../../styles/mixins/colors.scss";
+
+.button {
+    padding: 15px 50px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: $green-color;
+    color: #fff;
+
+    &.primary {
+        background-color: $green-color;
+    }
+    
+    &.secundary {
+        background-color: #fff;
+        color: $purple-color;
+    }
+}
+

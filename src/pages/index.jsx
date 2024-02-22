@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Head from "next/head";
 import styles from "../styles/Home.module.scss"
+import Welcome from "@/components/Welcome";
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+      <Welcome />
     </>
   );
 }

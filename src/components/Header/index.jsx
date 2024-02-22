@@ -2,6 +2,7 @@ import styles from "./header.module.scss";
 import logo from "../../../public/agencia.svg";
 import Image from "next/image";
 import Link from "next/link";
+import Button from "../Button" 
 
 export default function Header() {
   return (
@@ -15,7 +16,7 @@ export default function Header() {
         <Link href="/">Contato</Link>
       </div>
       <div className={styles.action}>
-        <button className={styles.button}>Fale conosco</button>
+        <Button label="Fale conosco" />
       </div>
     </header>
   );
