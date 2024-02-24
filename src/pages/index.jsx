@@ -3,6 +3,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.scss"
 import Welcome from "@/components/Welcome";
 import Features from "@/components/Features";
+import Contato from "@/components/Contato";
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Header />
       <Welcome />
       <Features />
+      <Contato />
     </>
   );
 }

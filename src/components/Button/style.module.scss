@@ -17,5 +17,13 @@
         background-color: #fff;
         color: $purple-color;
     }
+
+    &.full {
+        padding: 21px;
+        width: 100%;
+        font-size: 21px;
+        font-weight: 600;
+        background-color: #0AAA28;
+    }
 }
 
