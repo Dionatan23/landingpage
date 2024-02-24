@@ -1,5 +1,7 @@
 import Button from "../Button";
 import styles from "./style.module.scss";
+import banner from "../../../public/leads-img.svg"
+import Image from "next/image";
 
 export default function Welcome() {
   return (
@@ -12,7 +14,9 @@ export default function Welcome() {
         </p>
         <Button label="Aumentar vendas" tipo="secundary"/>
       </div>
-      <div className={styles.image}></div>
+      <div className={styles.image}>
+        <Image src={banner} alt="Banner" />
+      </div>
     </div>
   );
 }
