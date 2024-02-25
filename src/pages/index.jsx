@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.scss"
 import Welcome from "@/components/Welcome";
 import Features from "@/components/Features";
 import Contato from "@/components/Contato";
+import Footer from "@/components/Footer";
 
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <Welcome />
       <Features />
       <Contato />
+      <Footer />
     </>
   );
 }

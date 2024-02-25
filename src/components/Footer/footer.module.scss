@@ -1,0 +1,47 @@
+.container {
+    padding: 0 180px;
+    padding-top: 72px;
+    background-color: #26003B;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.colum {
+
+    margin-top: 4.5rem;
+
+    &.columPrimcipal {
+        margin-top: 0;
+    }
+
+    .title {
+        font-size: 29px;
+        color: #fff;
+    }
+    h1 {
+        font-size: 24px;
+        color: #0FCE33;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    &.textRight {
+        text-align: right;
+    }
+
+    .icons {
+        display: inline-grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+    }
+}
+
+.todos {
+    color: #969696;
+    font-size: 20px;
+    padding: 6rem 0 1rem;
+    grid-column: span 4;
+    text-align: center;
+}

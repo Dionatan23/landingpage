@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "../Button";
 import Select from "../Select";
 import TextInput from "../TextInput";
@@ -19,21 +20,33 @@ export default function Contato() {
         <form>
           <TextInput type="text" placeholder="Nome completo" required />
           <TextInput type="email" placeholder="E-mail profissional" required />
-          <TextInput 
-            type="text" 
-            placeholder="Celular/Whatsapp" 
+          <TextInput
+            type="text"
+            placeholder="Celular/Whatsapp"
             pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$"
-            required />
+            required
+          />
           <TextInput type="text" placeholder="Site" />
-          <Select placeholder="Orçamento para mídia" required 
+          <Select
+            placeholder="Orçamento para mídia"
+            required
             options={[
-                {label: "Instagram", value: "instagram"},
-                {label: "Facebook", value: "facebook"},
-                {label: "Google", value: "Google"}
+              { label: "Instagram", value: "instagram" },
+              { label: "Facebook", value: "facebook" },
+              { label: "Google", value: "Google" },
             ]}
           />
-          <Button label="Enviar" tipo="full"/>
+          <Button label="Enviar" tipo="full" />
         </form>
+      </div>
+      <div className={styles.footer}>
+        <p>
+          Ao enviar esse formulário, você reconhece que leu e concorda com a
+          nossa
+          <Link href="/">
+            <span> Política de Privacidade.</span>
+          </Link>
+        </p>
       </div>
     </div>
   );
