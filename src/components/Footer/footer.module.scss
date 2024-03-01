@@ -1,9 +1,19 @@
+@import "../../styles/mixins/padding.scss";
+@import "../../styles/mixins/responsive.scss";
+@import "../../styles/mixins/fonts.scss";
+
+
 .container {
-    padding: 0 180px;
+    @include Padding;
     padding-top: 72px;
     background-color: #26003B;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+
+    @include Phone {
+        grid-template-columns: 1fr;
+        padding-top: 1rem;
+    }
 }
 
 .colum {
@@ -15,11 +25,11 @@
     }
 
     .title {
-        font-size: 29px;
+        @include SizeNormal;
         color: #fff;
     }
     h1 {
-        font-size: 24px;
+        @include SizeSmall;
         color: #0FCE33;
     }
 
@@ -36,12 +46,24 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 25px;
     }
+
+    @include Phone {
+        margin-top: 0px;
+
+        &.textRight {
+            text-align: left;
+        }
+    }
 }
 
 .todos {
     color: #969696;
-    font-size: 20px;
+    @include SizeSmall;
     padding: 6rem 0 1rem;
     grid-column: span 4;
     text-align: center;
+
+    @include Phone {
+        grid-column: 1;
+    }
 }

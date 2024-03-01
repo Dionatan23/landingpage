@@ -15,7 +15,7 @@ export default function Welcome() {
         <Button label="Aumentar vendas" tipo="secundary"/>
       </div>
       <div className={styles.image}>
-        <Image src={banner} alt="Banner" />
+        <Image className={styles.img} src={banner} alt="Banner" />
       </div>
     </div>
   );

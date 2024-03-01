@@ -1,10 +1,11 @@
 @import "../../styles/mixins/colors.scss";
+@import "../../styles/mixins/fonts.scss";
 
 .button {
     padding: 15px 50px;
     border-radius: 5px;
     border: none;
-    font-size: 16px;
+    @include SizeNormal;
     font-weight: bold;
     background-color: $green-color;
     color: #fff;
@@ -21,7 +22,7 @@
     &.full {
         padding: 21px;
         width: 100%;
-        font-size: 21px;
+        @include SizeNormal;
         font-weight: 600;
         background-color: #0AAA28;
     }

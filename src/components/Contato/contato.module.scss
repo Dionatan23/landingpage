@@ -1,30 +1,39 @@
+@import "../../styles/mixins/padding.scss";
+@import "../../styles/mixins/responsive.scss";
+@import "../../styles/mixins/fonts.scss";
+
 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: flex-start;
   justify-content: space-between;
-  padding: 34px 180px;
+  @include Padding;
   gap: 15px 3rem;
   background-image: url("../../../public/efeito.svg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 10rem;
+
+  @include Phone {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
 }
 
 .texts {
   span {
-    font-size: 30px;
+    @include SizeNormal;
     font-weight: 600;
     color: #0fce33;
   }
 
   h1 {
-    font-size: 65px;
+    @include SizeLarge;
     font-weight: bold;
   }
 
   p {
-    font-size: 30px;
+    @include SizeNormal; 
     font-weight: 300;
     opacity: 0.7;
   }
@@ -38,7 +47,7 @@
 
   h1 {
     color: #380158;
-    font-size: 35px;
+    @include SizeMediun;
     font-weight: bold;
   }
 
@@ -46,18 +55,32 @@
     display: grid;
     gap: 23px;
   }
+
+  @include Phone {
+    padding: 1rem;
+
+    form {
+      gap: 1rem;
+    }
+  }
 }
 
 .footer {
   grid-column-start: 2;
   text-align: center;
   padding: 0 6rem;
-  font-size: 20px;
+  @include SizeSmall;
   line-height: 2rem;
   color: #c9c9c9;
 
   span {
     color: #fff;
     cursor: pointer;
+  }
+
+  @include Phone {
+    grid-column-start: 1;
+    padding: 0 1rem;
+    margin: 0px;
   }
 }
